@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_file>
+	<device>
+		<device_name>MacbookPro</device_name>
+		<os>macOS Sierra</os>
+		<speed>1.3GHz</speed>
+		<ram>8GB</ram>
+		<screen_resolution>2304 X 1440</screen_resolution>
+	</device>
+
+	<device>
+		<device_name>Samsung Galaxy Tab E</device_name>
+		<os>Android APQ 8016</os>
+		<speed>1.3GHz</speed>
+		<ram>1.5GB</ram>
+		<screen_resolution>1280 X 800</screen_resolution>
+	</device>
+
+	<device>
+		<device_name>Sony Xpeira M</device_name>
+		<os>Android 4.1</os>
+		<speed>Dual-core 1.0Ghz</speed>
+		<ram>4GB</ram>
+		<screen_resolution>480 X 854</screen_resolution>
+	</device>
+</data_file>
