@@ -14,19 +14,30 @@ background-image: linear-gradient(225deg, #8EC5FC 0%, #E0C3FC 100%);
   color: black; 
   text-align: center;
   line-height: 2em;
+
+  -ms-transform:rotateX( 90deg);  
+  -webkit-transform:rotateX( 90deg);
   transform: rotateX( 90deg);
   background-color: white;
 }
 
 .shape1
 {
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -ms-transform:rotateX(-25deg) rotateY(20deg);
+  -webkit-transform:rotateX(-25deg) rotateY(20deg);
   transform: rotateX(-25deg) rotateY(20deg);
 }
 
 .shape2
 {
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -ms-transform: rotateX(25deg) rotateY(-20deg);
+  -webkit-transform: rotateX(25deg) rotateY(-20deg);
   transform: rotateX(25deg) rotateY(-20deg);
 }
 
@@ -44,7 +55,11 @@ background-image: linear-gradient(225deg, #8EC5FC 0%, #E0C3FC 100%);
     height: 120vh;
     width: 90vh;
     margin-left: 30%;
+    -ms-transform:rotateX( 90deg);
+    -webkit-transform:rotateX( 90deg);
     transform: rotateX( 90deg);
+    -ms-animation: move1 5s 1;
+    -webkit-animation: move1 5s 1;
     animation: move1 5s 1;
     background-image: url("images/desktop.png");
     background-repeat: no-repeat;
@@ -57,7 +72,11 @@ background-image: linear-gradient(225deg, #8EC5FC 0%, #E0C3FC 100%);
     height: 50vh;
     width: 50vh;
     margin-left: 50%;
+    -ms-transform:rotateX( -90deg);
+    -webkit-transform:rotateX( -90deg);
     transform: rotateX( -90deg);
+    -ms-animation: move2 5s 1;
+    -webkit-animation: move2 5s 1;
     animation: move2 5s 1;
     background-image: url("images/tablet.png");
     background-repeat: no-repeat;
@@ -70,10 +89,30 @@ background-image: linear-gradient(225deg, #8EC5FC 0%, #E0C3FC 100%);
     margin-top: 20%;
     height: 90vh;
     width: 40vh;
+    -ms-animation: move3 5s 1;
+    -webkit-animation: move3 5s 1;
     animation: move3 5s 1;
     background-image: url("images/mobile.png");
     background-repeat: no-repeat;
 
+}
+
+@-webkit-keyframes move1
+{
+  from {margin-left:80%;}
+  to {margin-left: 30%;}
+}
+
+@-webkit-keyframes move2
+{
+ from {margin-left:0%;}
+    to {margin-left: 50%;}
+}
+
+@-webkit-keyframes move3
+{
+  from {margin-left:0%;}
+    to {margin-left: 20%;}
 }
 
 @keyframes move1
